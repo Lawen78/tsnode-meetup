@@ -1,0 +1,45 @@
+{
+  "name": "tsnode-meetup",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "start:dev": "nodemon -V -w . --ext \".ts\" --ignore \".spec.ts\" --exec \"npm run start\"",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "clean": "rm -rf build"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.1",
+    "@types/body-parser": "^1.16.8",
+    "@types/express": "^4.11.1",
+    "@types/jsonwebtoken": "^7.2.5",
+    "@types/mongoose": "^5.0.2",
+    "@types/passport": "^0.4.3",
+    "@types/passport-jwt": "^3.0.1",
+    "nodemon": "^1.15.1",
+    "ts-node": "^5.0.0",
+    "typescript": "^2.7.2"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.1",
+    "moment": "^2.20.1",
+    "mongoose": "^5.0.6",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LordKenzo/.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "homepage": "https://github.com"
+}
